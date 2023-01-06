@@ -4,6 +4,7 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<navigator url="/pages/404/404">404页面</navigator>
 	</view>
 </template>
 
@@ -16,6 +17,12 @@
 		},
 		onLoad() {
 
+		},
+		onShow() {
+			console.log('页面显示')
+		},
+		onPullDownRefresh() {
+			console.log('页面下拉刷新')
 		},
 		methods: {
 
